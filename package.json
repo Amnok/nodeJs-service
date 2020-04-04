@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js"
+    "start": "nodemon server.js",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix --ext .js,.jsx ."
   },
   "author": "ankit",
   "license": "MIT",
@@ -15,12 +16,15 @@
     "express": "^4.16.3",
     "gravatar": "^1.6.0",
     "jsonwebtoken": "^8.3.0",
-    "mongoose": "^5.2.1",
+    "mongoose": "^5.9.7",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.4.0"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "nodemon": "^1.17.5"
   }
 }
